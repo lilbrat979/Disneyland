@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Disneyland</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+        );
+      }
+      h1 {
+        font-size: 42px;
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        color: #f30067
+      }
+      h2 {
+        text-align: center;
+        color: rgb(181, 255, 255);
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 400px;
+      }
+      .by {
+        font-weight: bold;
+      }
+      .name {
+        text-align: center;
+        font-size: 12px;
+      }
+      button {
+        padding: 15px 20px;
+        font-size: 16px;
+        font-family: "Courier New", Courier, monospace;
+        background: white;
+        color: rgba(230, 29, 58, 0.78);
+        margin: 20px auto;
+        border: 1px solid black;
+        border-radius: 30px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+        transition: all 200ms ease-in-out;
+        font-weight: bold;
+        display: block;
+      }
+
+      button:hover {
+        background: rgba(230, 29, 58, 0.78);
+        color: #ffffff;
+        cursor: pointer;
+      }
+      p {
+        line-height: 15px;
+        font-weight: bold;
+        color: #f9f9fc;
+      }
+      .vacation {
+        text-decoration: none;
+        color:rgb(181, 255, 255);
+      }
+      .vacation:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Disneyland</h1>
+    <h2>Disneyland is the Happiest Place on Earth!</h2>
+    <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/041/902/original/disney.jpg?1658953771"
+    alt=Disneyland Castle"/>
+    <p>
+      Disneyland opened on July 17th, 1955 and since then has warmed the hearts
+      of millions of people from around the world. It is a magical place that
+      includes exciting attractions, glamorous shopping, delectible food, and
+      you can even meet the characters from your favorite Disney movies and
+      shows!
+      <br />
+      <a
+        href="https://disneyland.disney.go.com/hotels?ef_id=Cj0KCQjwof6WBhD4ARIsAOi65ajevU2qdHYcL-r9apI8ot-9vd4oZKNxA-RVDRB89TIfqqaZOsZ9xdEaAg4qEALw_wcB:G:s&s_kwcid=AL!5054!3!606710902231!e!!g!!disneyland%20vacation%20packages&CMP=KNC-FY22_DLR_TRA_DOM_L365AB_RES_RSG_Hotels_EXACT%7CG%7C5222059.DL.AM.01.02%7CMEV2WDX%7CBR%7C606710902231&keyword_id=kwd-123750192%7Cdc%7Cdisneyland%20vacation%20packages%7C606710902231%7Ce%7C5054:3%7C&gclid=Cj0KCQjwof6WBhD4ARIsAOi65ajevU2qdHYcL-r9apI8ot-9vd4oZKNxA-RVDRB89TIfqqaZOsZ9xdEaAg4qEALw_wcB/"
+        target="_blank"
+        class="vacation"
+      >
+        <br />
+        <strong> It is the best vacation spot! </strong>
+      </a>
+    </p>
+    <hr />
+    <button>🏰 Go to <em>Disneyland</em></button>
+    <div class="name">
+      <span class="by">Coded by: </span>
+      Bre Guia
+    </div>
+    <script>
+      function disneyland() {
+        let attended = prompt("Have you been to Disneyland?");
+
+        if (attended === "yes") {
+          alert("Now is a good time to go again!");
+        } else {
+          alert("Now is a good time to go!");
+        }
+      }
+      let goToDisneyland = document.querySelector("button");
+
+      goToDisneyland.addEventListener("click", disneyland);
+    </script>
+  </body>
+</html>
